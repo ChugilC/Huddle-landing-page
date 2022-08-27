@@ -1,0 +1,108 @@
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --softMagenta: hsl(300, 69%, 71%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  background-color: var(--violet);
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("./images/bg-desktop.svg");
+  background-size: contain;
+}
+
+.center-content {
+  width: 1480px;
+  margin: 0 auto;
+}
+
+.nav {
+  padding: 30px 0 30px 0;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+.hero {
+  display: flex;
+  gap: 50px;
+}
+
+.right h1 {
+  font-size: 35px;
+}
+
+.right-content h1:nth-child(1) {
+  margin-top: 50px;
+}
+
+.right-content h1:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.right p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.btn {
+  color: var(--violet);
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 60px 10px 60px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 10px 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--softMagenta);
+  color: #fff;
+}
+
+.right-content {
+  width: 80%;
+}
+
+footer {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.follow-logo {
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.follow-logo:hover {
+  color: var(--softMagenta);
+  border: 1px solid var(--softMagenta);
+}
+
+/* Mobine responsive not yet implemented */
